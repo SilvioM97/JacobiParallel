@@ -2,14 +2,21 @@
 A sequential and parallel (standard threads and FastFlow) implementation of the Jacobi method.  
 The Jacobi method is an iterative algorithm for determining the solution of a square and strictly diagonally dominant system of linear equations).
 
-## How to compile
+## Table of contents[![](./docs/img/pin.svg)](#table-of-contents)
+1. [How to compile](#compiling)
+2. [How to run the code](#execution)
+3. [What the code does](#functioning)
+4. [The output](#output)
+5. [The code](#code)
+
+## Compiling
 `g++ -std=c++20 -O3 -pthread jacobi_main.cpp -o jacobi_main`
 
-## How to run the code
+## Execution
 No initial input needed, everything will be prompted after the run command: `./jacobi_main`
 
-## What the code does
-It will ask to you to insert the dimension of the space, the desired number of threads and the number of iterations of the Jacobi method.  
+## Functioning
+The program will ask to you to insert the dimension of the space, the desired number of threads and the number of iterations of the Jacobi method.  
 Taken these inputs, it generates a (strictly diagonally dominant) matrix and a vector (known term vector) and it solves the system in the following ways:  
 - Sequential  
 - Parallel version 1 (standard threads)  
@@ -17,13 +24,13 @@ Taken these inputs, it generates a (strictly diagonally dominant) matrix and a v
 - Parallel version 2 (FastFlow)  
 - Parallel version 2 with 1 thread (in order to compute the scalability)  
 
-## The output
+## Output
 The code will print the service time of each execution (in microseconds) and three measures for each of the two parallel versions:  
 - Speedup  
 - Efficiency  
 - Scalability  
 
-## The code
+## Code
 The code is divided into 5 files:  
 - `jacobi_main.cpp`: the main
 - `jacobi.h`: the file which contains the three Jacobi method algorithms (sequential, standard threads, FastFlow)
