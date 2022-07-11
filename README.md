@@ -6,7 +6,7 @@ The Jacobi method is an iterative algorithm for determining the solution of a sq
 `g++ -std=c++20 -O3 -pthread jacobi_main.cpp -o jacobi_main`
 
 ## How to run the code
-No initial input needed, everything will be asked after the execution command: `./jacobi_main`
+No initial input needed, everything will be prompted after the run command: `./jacobi_main`
 
 ## What the code does
 It will ask to you to insert the dimension of the space, the desired number of threads and the number of iterations of the Jacobi method.  
@@ -22,3 +22,11 @@ The code will print the service time of each execution (in microseconds) and thr
 - Speedup  
 - Efficiency  
 - Scalability  
+
+## The code
+The code is divided into 5 files:  
+- `jacobi_main.cpp`: the main
+- `jacobi.h`: the file which contains the three Jacobi method algorithms (sequential, standard threads, FastFlow)
+- `libr.h`: useful functions
+- `measures.h`: functions which computes the measures (speedup, efficiency, scalability)
+- `utimer.cpp`: definition of the timer class 
