@@ -1,6 +1,6 @@
 # JacobiParallel
 A sequential and parallel (standard threads and FastFlow) implementation of the Jacobi method.  
-The Jacobi method is an iterative algorithm for determining the solution of a square and strictly diagonally dominant system of linear equations).
+The Jacobi method is an iterative algorithm for determining the solution of a square and strictly diagonally dominant system of linear equations.
 
 ## Table of contents[![](./docs/img/pin.svg)](#table-of-contents)
 1. [How to compile](#compiling)
