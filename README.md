@@ -36,4 +36,4 @@ The code is divided into 5 files:
 - `jacobi.h`: the file which contains the three Jacobi method algorithms (sequential, standard threads, FastFlow)
 - `libr.h`: useful functions
 - `measures.h`: functions which compute the measures (speedup, efficiency, scalability)
-- `utimer.cpp`: definition of the timer class provided by Professor Danelutto
+- `utimer.cpp`: definition of the timer class 
