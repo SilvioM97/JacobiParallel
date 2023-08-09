@@ -9,6 +9,7 @@
 #include "libr.h"
 using namespace std;
 
+
 const float tol = 1e-12;
 
 long jacobi_seq(int n, int num_it, vector<vector<float>> A, vector<float> b, vector<float> yk);
