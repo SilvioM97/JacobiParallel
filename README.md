@@ -19,9 +19,9 @@ No initial input needed, everything will be prompted after the run command: `./j
 The program will ask you to insert the dimension of the space, the desired number of threads and the number of iterations of the Jacobi method.  
 Taken these inputs, it generates a (strictly diagonally dominant) matrix and a vector (known term vector) and it solves the system in the following ways:  
 - Sequential  
-- Parallel version 1 (standard threads)  
+- Parallel version 1 (standard)  
 - Parallel version 1 with 1 thread (in order to compute the scalability)  
-- Parallel version 2 (FastFlow)  
+- Parallel version 2 (FastFlow library)  
 - Parallel version 2 with 1 thread (in order to compute the scalability)  
 
 ## Output
